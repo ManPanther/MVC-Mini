@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+</head>
+<body>
+    <h1>KlockisHåkis.com</h1>
+    <a asp-controller="Watch" asp-action="Index">Home</a>
+    <a asp-controller="Watch" asp-action="Create">Create</a>
+    <br />
+    <div>
+        @RenderBody()
+    </div>
+    <footer>&copy; KlockisHåkis.com</footer>
+    @RenderSection("scripts", false)
+</body>
+</html>
